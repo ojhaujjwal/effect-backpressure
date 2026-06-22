@@ -1,5 +1,5 @@
 {
-  "name": "ojhaujjwal/effect-backpressure",
+  "name": "@ojhaujjwal/effect-backpressure",
   "version": "0.1.0",
   "type": "module",
   "exports": {
@@ -9,6 +9,7 @@
     "./oxlintrc.json": "./oxlintrc.json"
   },
   "publishConfig": {
+    "access": "public",
     "exports": {
       "./package.json": "./package.json",
       "./oxlint": "./dist/oxlint/index.js",
