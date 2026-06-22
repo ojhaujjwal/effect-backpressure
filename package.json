@@ -1,6 +1,6 @@
 {
   "name": "@ojhaujjwal/effect-backpressure",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "type": "module",
   "exports": {
     "./package.json": "./package.json",
@@ -17,7 +17,12 @@
       "./oxlintrc.json": "./oxlintrc.json"
     }
   },
-  "files": ["oxlintrc.json", "src/**/*.ts", "dist/**/*.js", "dist/**/*.d.ts"],
+  "files": [
+    "oxlintrc.json",
+    "src/**/*.ts",
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "test": "vitest"
