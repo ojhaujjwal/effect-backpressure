@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "references": {
+    "tesla-charger": {
+      "path": "../tesla-charger/lint",
+      "description": "Tesla charger oxlint rules"
+    },
+    "media-diy-backend": {
+      "path": "../media-diy-backend/lint",
+      "description": "Media DIY backend oxlint rules"
+    },
+    "effect-oxc": {
+      "path": "~/.local/share/effect-solutions/effect-smol/packages/tools/oxc",
+      "description": "Reference effect/oxc oxlint plugin implementation"
+    }
+  }
+}

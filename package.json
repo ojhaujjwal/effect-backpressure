@@ -1,0 +1,36 @@
+{
+  "name": "ojhaujjwal/effect-backpressure",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./oxlint": "./src/oxlint/index.ts",
+    "./oxlint/rules/*": "./src/oxlint/rules/*.ts",
+    "./oxlintrc.json": "./oxlintrc.json"
+  },
+  "publishConfig": {
+    "exports": {
+      "./package.json": "./package.json",
+      "./oxlint": "./dist/oxlint/index.js",
+      "./oxlint/rules/*": "./dist/oxlint/rules/*.js",
+      "./oxlintrc.json": "./oxlintrc.json"
+    }
+  },
+  "files": ["oxlintrc.json", "src/**/*.ts", "dist/**/*.js", "dist/**/*.d.ts"],
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@oxlint/plugins": "^1.68.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "oxlint": "^1.68.0",
+    "typescript": "^5.8",
+    "vitest": "^3"
+  }
+}

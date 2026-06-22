@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "import", "oxc", "eslint"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error"
+  },
+  "rules": {
+    "effect-lint/no-effect-ignore": "error",
+    "effect-lint/no-effect-catchallcause": "error",
+    "effect-lint/no-effect-asvoid": "error",
+    "effect-lint/no-silent-error-swallow": "error",
+    "effect-lint/no-service-option": "error",
+    "effect-lint/no-nested-layer-provide": "error",
+    "effect-lint/pipe-max-arguments": "error",
+    "effect-lint/no-disable-validation": "error",
+    "effect-lint/no-void-expression": "error",
+    "effect-lint/no-oxlint-disable": "error",
+    "effect-lint/no-process": "error",
+    "effect-lint/no-effect-any": "error",
+    "effect-lint/no-async-await": "error",
+    "effect-lint/no-satisfies": "error",
+    "effect-lint/no-raw-date": "error",
+    "effect-lint/no-console": "error",
+    "effect-lint/no-node-imports": "error",
+    "effect-lint/no-unknown-effect-error": "error",
+    "effect-lint/no-plain-it-with-effect": "error",
+    "effect-lint/no-vitest-modifiers": "error",
+    "effect-lint/no-ts-ignore": "error",
+    "effect-lint/no-ts-nocheck": "error",
+    "effect-lint/prefer-option-from-nullable": "warn",
+    "effect-lint/no-bun-globals": "error",
+    "effect-lint/no-require": "error"
+  }
+}
