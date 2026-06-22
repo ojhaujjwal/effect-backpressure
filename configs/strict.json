@@ -1,5 +1,5 @@
 {
-  "extends": ["@ojhaujjwal/effect-backpressure/configs/recommended.json"],
+  "extends": ["./recommended.json"],
   "rules": {
     "effect-lint/no-console": "error",
     "effect-lint/prefer-option-from-nullable": "error"
