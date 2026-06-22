@@ -1,9 +1,9 @@
 import { RuleTester } from "oxlint/plugins-dev"
-import rule from "../src/oxlint/rules/no-disable-validation.ts"
+import rule from "../src/oxlint/rules/no-schema-disable-validation.ts"
 
 const tester = new RuleTester()
 
-tester.run("no-disable-validation", rule, {
+tester.run("no-schema-disable-validation", rule, {
   valid: [
     "const x = { disableValidation: false }",
     "const x = { otherProperty: true }",

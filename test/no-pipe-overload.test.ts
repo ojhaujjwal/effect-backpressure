@@ -1,9 +1,9 @@
 import { RuleTester } from "oxlint/plugins-dev"
-import rule from "../src/oxlint/rules/pipe-max-arguments.ts"
+import rule from "../src/oxlint/rules/no-pipe-overload.ts"
 
 const tester = new RuleTester()
 
-tester.run("pipe-max-arguments", rule, {
+tester.run("no-pipe-overload", rule, {
   valid: [
     "someEffect.pipe(Effect.map(f))",
     "someEffect.pipe(Effect.map(f), Effect.map(g), Effect.map(h))",

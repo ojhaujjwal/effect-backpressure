@@ -1,12 +1,14 @@
 {
   "name": "@ojhaujjwal/effect-backpressure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "exports": {
     "./package.json": "./package.json",
     "./oxlint": "./src/oxlint/index.ts",
     "./oxlint/rules/*": "./src/oxlint/rules/*.ts",
-    "./oxlintrc.json": "./oxlintrc.json"
+    "./oxlintrc.json": "./oxlintrc.json",
+    "./configs/recommended.json": "./configs/recommended.json",
+    "./configs/strict.json": "./configs/strict.json"
   },
   "publishConfig": {
     "access": "public",
@@ -14,11 +16,14 @@
       "./package.json": "./package.json",
       "./oxlint": "./dist/oxlint/index.js",
       "./oxlint/rules/*": "./dist/oxlint/rules/*.js",
-      "./oxlintrc.json": "./oxlintrc.json"
+      "./oxlintrc.json": "./oxlintrc.json",
+      "./configs/recommended.json": "./configs/recommended.json",
+      "./configs/strict.json": "./configs/strict.json"
     }
   },
   "files": [
     "oxlintrc.json",
+    "configs/**/*.json",
     "src/**/*.ts",
     "dist/**/*.js",
     "dist/**/*.d.ts"

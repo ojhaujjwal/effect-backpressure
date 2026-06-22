@@ -5,11 +5,14 @@ const tester = new RuleTester()
 
 tester.run("no-process", rule, {
   valid: [
-    "process.argv",
     'import { Config } from "effect"; Config.string("FOO")',
     "console.log('hello')"
   ],
   invalid: [
+    {
+      code: "process.argv",
+      errors: [{ message: /process/ }]
+    },
     {
       code: "process.env.FOO",
       errors: [{ message: /process/ }]

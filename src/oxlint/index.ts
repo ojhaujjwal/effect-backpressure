@@ -5,8 +5,8 @@ import noEffectAsvoid from "./rules/no-effect-asvoid.ts"
 import noSilentErrorSwallow from "./rules/no-silent-error-swallow.ts"
 import noServiceOption from "./rules/no-service-option.ts"
 import noNestedLayerProvide from "./rules/no-nested-layer-provide.ts"
-import pipeMaxArguments from "./rules/pipe-max-arguments.ts"
-import noDisableValidation from "./rules/no-disable-validation.ts"
+import noPipeOverload from "./rules/no-pipe-overload.ts"
+import noSchemaDisableValidation from "./rules/no-schema-disable-validation.ts"
 import noVoidExpression from "./rules/no-void-expression.ts"
 import noOxlintDisable from "./rules/no-oxlint-disable.ts"
 import noProcess from "./rules/no-process.ts"
@@ -34,8 +34,8 @@ export default definePlugin({
     "no-silent-error-swallow": noSilentErrorSwallow,
     "no-service-option": noServiceOption,
     "no-nested-layer-provide": noNestedLayerProvide,
-    "pipe-max-arguments": pipeMaxArguments,
-    "no-disable-validation": noDisableValidation,
+    "no-pipe-overload": noPipeOverload,
+    "no-schema-disable-validation": noSchemaDisableValidation,
     "no-void-expression": noVoidExpression,
     "no-oxlint-disable": noOxlintDisable,
     "no-process": noProcess,

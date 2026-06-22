@@ -24,12 +24,6 @@ export default defineRule({
           node.object.property.name === "process";
 
         if (isDirectProcess || isGlobalThisProcess) {
-          const propertyName = node.property.type === "Identifier" ? node.property.name : null;
-
-          if (propertyName === "argv") {
-            return;
-          }
-
           context.report({
             node,
             messageId: "noProcess"
